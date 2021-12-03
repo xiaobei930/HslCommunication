@@ -21,7 +21,7 @@ namespace HslCommunicationDemo
             InitializeComponent( );
         }
 
-        private DeltaDvpTcpNet delta = null;
+        private DeltaTcpNet delta = null;
 
         private void FormSiemens_Load( object sender, EventArgs e )
         {
@@ -83,7 +83,7 @@ namespace HslCommunicationDemo
             }
 
             delta?.ConnectClose( );
-            delta = new DeltaDvpTcpNet( textBox1.Text, port, station );
+            delta = new DeltaTcpNet( textBox1.Text, port, station );
 
             try
             {

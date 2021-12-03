@@ -22,7 +22,7 @@ namespace HslCommunicationDemo
             InitializeComponent( );
         }
 
-        private DeltaDvpSerialAscii delta = null;
+        private DeltaSerialAscii delta = null;
 
         private void FormSiemens_Load( object sender, EventArgs e )
         {
@@ -110,7 +110,7 @@ namespace HslCommunicationDemo
             }
 
             delta?.Close( );
-            delta = new DeltaDvpSerialAscii( station );
+            delta = new DeltaSerialAscii( station );
 
             try
             {

@@ -126,7 +126,7 @@ namespace HslCommunicationDemo
             if (request.RawUrl.StartsWith( "/FormHttpServer/" ))
             {
                 // /FormHttpServer/CheckAccount            { "name" : "admin", "password" : "123456" }
-                return HttpServer.HandleObjectMethod( request, request.RawUrl, data, this );
+                return HttpServer.HandleObjectMethod(request, request.RawUrl, data, this).Result;
             }
             else
             {

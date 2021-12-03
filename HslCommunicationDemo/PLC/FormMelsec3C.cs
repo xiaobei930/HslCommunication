@@ -20,11 +20,11 @@ namespace HslCommunicationDemo
 		public FormMelsec3C( )
 		{
 			InitializeComponent( );
-			melsecA3C = new MelsecA3CNet1( );
+			melsecA3C = new MelsecA3CNet( );
 		}
 
 
-		private MelsecA3CNet1 melsecA3C = null;
+		private MelsecA3CNet melsecA3C = null;
 
 
 		private void FormSiemens_Load( object sender, EventArgs e )
@@ -115,7 +115,7 @@ namespace HslCommunicationDemo
 			
 
 			melsecA3C?.Close( );
-			melsecA3C = new MelsecA3CNet1( );
+			melsecA3C = new MelsecA3CNet( );
 			
 			try
 			{

@@ -186,7 +186,7 @@ namespace HslCommunicationDemo
 
 		private void button3_Click( object sender, EventArgs e )
 		{
-			OperateResult<string> read = omronHostLink.ReadPlcModel( );
+			OperateResult<string> read = omronHostLink.ReadPlcType( );
 			if (read.IsSuccess)
 			{
 				textBox11.Text = "Result：" + read.Content;

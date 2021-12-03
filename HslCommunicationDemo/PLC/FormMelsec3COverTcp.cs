@@ -19,11 +19,11 @@ namespace HslCommunicationDemo
 		public FormMelsec3COverTcp( )
 		{
 			InitializeComponent( );
-			melsecA3C = new MelsecA3CNet1OverTcp( );
+			melsecA3C = new MelsecA3CNetOverTcp( );
 		}
 
 
-		private MelsecA3CNet1OverTcp melsecA3C = null;
+		private MelsecA3CNetOverTcp melsecA3C = null;
 
 
 		private void FormSiemens_Load( object sender, EventArgs e )
@@ -81,7 +81,7 @@ namespace HslCommunicationDemo
 			}
 
 			melsecA3C?.ConnectClose( );
-			melsecA3C = new MelsecA3CNet1OverTcp( );
+			melsecA3C = new MelsecA3CNetOverTcp( );
 			melsecA3C.IpAddress = textBox1.Text;
 			melsecA3C.Port = port;
 
